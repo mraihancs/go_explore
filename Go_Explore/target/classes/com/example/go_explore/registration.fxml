@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="481.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.go_explore.RegistrationController">
+   <children>
+      <Label layoutX="222.0" layoutY="66.0" text="Registration" textFill="#23bf8d">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="128.0" layoutY="152.0" text="Username:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="128.0" layoutY="241.0" text="Password:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="newUsernameField" layoutX="128.0" layoutY="193.0" onAction="#registerAction" prefHeight="26.0" prefWidth="372.0" promptText="Enter Username" />
+      <PasswordField fx:id="newPasswordField" layoutX="128.0" layoutY="287.0" onAction="#registerAction" prefHeight="26.0" prefWidth="372.0" promptText="Enter Password" />
+      <Button fx:id="signup" layoutX="268.0" layoutY="367.0" mnemonicParsing="false" onAction="#registerAction" text="SignUp" textFill="#42ae6f" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
